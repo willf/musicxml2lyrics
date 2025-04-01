@@ -1,0 +1,52 @@
+site_name: musicxml2lyrics
+repo_url: https://github.com/willf/musicxml2lyrics
+site_url: https://willf.github.io/musicxml2lyrics
+site_description: Extract lyrics from MusicXML documents
+site_author: Will Fitzgerald
+edit_uri: edit/main/docs/
+repo_name: willf/musicxml2lyrics
+copyright: Maintained by <a href="https://willf.com">willf</a>.
+
+nav:
+  - Home: index.md
+  - Modules: modules.md
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: ["src/musicxml2lyrics"]
+theme:
+  name: material
+  feature:
+    tabs: true
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/willf/musicxml2lyrics
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/musicxml2lyrics
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
