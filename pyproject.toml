@@ -2,7 +2,7 @@
 name = "musicxml2lyrics"
 version = "0.0.1"
 description = "Extract lyrics from MusicXML documents"
-authors = [{ name = "Will Fitzgerald", email = "2" }]
+authors = [{ name = "Will Fitzgerald", email = "will.fitzgerald@gmail.com" }]
 readme = "README.md"
 keywords = ['python']
 requires-python = ">=3.9,<4.0"
@@ -28,9 +28,9 @@ dev = [
     "pytest>=7.2.0",
     "pre-commit>=2.20.0",
     "tox-uv>=1.11.3",
-    
+
     "mypy>=0.991",
-    
+
     "ruff>=0.9.2",
     "mkdocs>=1.4.2",
     "mkdocs-material>=8.5.10",
@@ -40,7 +40,6 @@ dev = [
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
-
 
 
 [tool.mypy]
@@ -82,7 +81,8 @@ select = [
     # mccabe
     "C90",
     # pycodestyle
-    "E", "W",
+    "E",
+    "W",
     # pyflakes
     "F",
     # pygrep-hooks
@@ -106,5 +106,3 @@ ignore = [
 
 [tool.ruff.format]
 preview = true
-
-
